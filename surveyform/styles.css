@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Georgia;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+.form-container{
+    background-color: seashell;
+    border: 2px solid cornsilk;
+    justify-content: center;
+}
+label, 
+.labeltext{
+    padding-right: 15px;
+    width: 150px
+  }
+#title{
+    text-align: center;
+    color: white;
+    background: dimgray;
+    padding: 10px;
+    font-family: Georgia;
+    text-transform: uppercase;
+}
+#description{
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-family: Georgia;
+}
+input[type="radio"], input[type="checkbox"]{
+    display: inline-block;
+    margin-right: auto;
+}
+#submit{
+    display: block;
+    width: 50%;
+    padding: 0.75em;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="text"], input[type="number"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background: white;
+    border: none;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+}
+#survey-form{
+    margin: 10px;
+}
+input:focus, textarea:focus, select:focus{
+    background-color: white;
+}
+@media screen and (max-width: 500px) {
+    .form-container{
+        overflow: scroll;
+        box-sizing: content-box;
+    }
+    .container{
+        padding: 15px;
+        margin: 0;
+        display: block;
+    }
+    input[type="text"], input[type="number"], input[type="email"]{
+        margin-top: 5px;
+        width: 100%;
+    }
+    textarea{
+        margin-top: 5px;
+        width: 100%;
+    }
+    #dropdown{
+        margin-top: 5px;
+    }
+    #itemtext{
+        margin-bottom: 5px;
+    }
+    .labeltextresponse{
+        margin-bottom: 5px;
+    }
+    #submit{
+        width: 100%;
+    }
+    #title{
+        font-size: medium;
+    }
+}

@@ -1,1 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking time for this Survey</p>
+      </header>
+      <form id="survey-form" autocomplete="off">
+        <div class="container">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name..." required>
+        </div>
+        <div class="container">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email..." required>
+        </div>
+        <div class="container">
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" min="10" max="99" placeholder="Age...">
+        </div>
+        <div class="container">
+          <p class="labeltext">Nationality</p>
+          <select name="Country" id="dropdown">
+            <option value="Country">Select Country</option>
+            <option value="USA">American</option>
+            <option value="India">Indian</option>
+            <option value="Australia">Australian</option>
+            <option value="Russia">Russian</option>
+            <option value="Italy">Italian</option>
+            <option value="France">French</option>
+            <option value="Germany">German</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="container">
+          <p class="labeltext labeltextresponse">Developer</p>
+          <label><input type="radio" name="Role" value="Frontend">Frontend</label>
+          <label><input type="radio" name="Role" value="Backend">Backend</label>
+          <label><input type="radio" name="Role" value="Both">Fullstack</label>
+          <label><input type="radio" name="Role" value="Programmer">Programmer</label>
+          <label><input type="radio" name="Role" value="Data Science">Data Science</label>
+          <label><input type="radio" name="Role" value="Data Analysis">Data Analysis</label>
+        </div>
+        <div class="container">
+          <p class="labeltext labeltextresponse">Qualification</p>
+          <label><input type="checkbox" name="Role1" value="10+2">10+2</label>
+            <label><input type="checkbox" name="Role1" value="Graduation">Graduation</label>
+            <label><input type="checkbox" name="Role1" value="PG">Post Graduation</label>
+          </div>
+          <div class="container">
+            <p class="labeltext">Describe about yourself</p>
+            <textarea id="comment" name="comment"></textarea>
+          </div>
+          <div class="container">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+      </form>
+    </div>
+  </body>
+<html>
